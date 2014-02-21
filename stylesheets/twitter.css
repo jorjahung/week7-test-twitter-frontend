@@ -1,0 +1,444 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: rgb(188, 220, 197);
+  background-image: url("../images/background.png");
+  font-size: 14px;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 22px;
+  margin-bottom: 5px;
+}
+
+em {
+  font-weight: 900;
+}
+
+a {
+  color: rgb(255, 146, 118);
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+/******************** HEADER ********************/
+header {  
+  position:fixed;
+  margin:0px;
+  top:0px;
+  left:0px;
+  display: inline-block;
+  width:100%;
+  height:46px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background:white;
+  background: -moz-linear-gradient(center top , #736F6E, #111111) repeat scroll 0 0 transparent;
+  z-index: 2;
+}
+
+#header-container{
+  height: 38px;
+}
+
+#navigator ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navigator ul li{
+  display: inline;
+  font-size: 14px;
+  color: rgb(102, 117, 127);
+}
+.menu-item {
+  
+}
+
+.menu-text {
+  color: rgb(255, 146, 118);
+  display: block;
+  float: left;
+  font-size: 13px;
+  font-weight: 500;
+  height: 13px;
+  line-height: 13px;
+  margin-left: 3px;
+  margin-top: 17px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+}
+/******************** HEADER ********************/
+
+/******************** BUTTONS ********************/
+button  {
+  background-color: rgb(245, 248, 250);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 248, 250));
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  border: 1px solid rgb(225, 232, 237);
+  border-bottom-style: solid;
+  box-shadow: none;
+  color: rgb(41, 47, 51);
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 28px;
+  margin-right: 9px;
+  margin-top: 3px;
+  width: 88px;
+  padding: 5px 3px;
+}
+
+
+button img, button span{
+  vertical-align: middle;
+}
+
+button img{
+  margin: 0 4px;
+}
+
+button:hover {
+  background-color: rgb(225, 232, 237);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(225, 232, 237));
+}
+/******************** BUTTONS ********************/
+
+
+/******************** TWEETS ********************/
+#tweets-container {
+  margin: 0px auto;
+  width:590px;
+  background-color: white;
+  border: 1px solid rgba(41, 47, 51, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 0 225px rgba(255,255,255,.55);
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+#tweets-container-header {
+	color: rgb(102, 117, 127);
+	display: block;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 200;
+	margin: 0px;
+	padding: 12px;
+	position: relative;
+}
+
+
+.tweet{
+  border-top: 1px solid rgba(225, 232, 237, 1);
+  padding: 5px 10px;
+}
+
+.tweet:hover{
+  background-color: rgb(245,245,245);
+  cursor: pointer;
+}
+
+.tweet:hover .reply a{
+ color: rgb(153, 153, 153);
+}
+.tweet:hover .replyicon{
+  background: url("../images/reply_hover.png") no-repeat;
+}
+
+  .tweet-left {
+    width:58px;
+    display: inline-block;
+    vertical-align: top;
+  }
+    .tweet-left img{
+      border-radius: 5px;
+    }
+
+  .tweet-middle {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .tweet-right{
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 24px;
+  }
+
+  .tweet a {
+    color: rgb(136, 153, 166);
+    text-decoration: none;
+  }
+
+  .tweet a:hover {
+    color: #ae406b;
+  }
+
+  .username {
+    font-size: 13px;
+    color: rgb(136, 153, 166);
+  }
+
+  .fullname a {
+    font-size: 16px;
+    color: black;
+  }
+  .fullname a:hover {
+    color: rgb(255, 146, 118);
+    text-decoration: underline;
+  }
+
+  .message {
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  .reply a{
+    font-size: 12px;
+    color: rgb(221, 221, 221);
+    
+  }
+
+  .reply a:hover{
+    text-decoration: underline;
+  }
+
+  .timestamp {
+    font-size: 13px;
+    color: rgb(136, 153, 166);
+  }
+
+
+  .favorite {
+    background: url("../images/favorite.png") no-repeat;
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 5px auto;
+  }
+
+  .favorite:hover{
+    background: url("../images/favorite_hover.png") no-repeat;
+    display: block;
+  }
+
+  .retweet {
+    background: url("../images/retweet.png") no-repeat;
+    display: block;
+    height: 16px;
+    width: 20px;
+  }
+
+  .retweet:hover{
+    background: url("../images/retweet_hover.png") no-repeat;
+    display: block;
+  }
+
+  .replyicon{
+    background: url("../images/reply.png") no-repeat;
+    height: 11px;
+    width: 12px;
+    display: inline-block;
+  }
+
+/******************** tweetS ********************/
+
+/******************** FORMS ********************/
+#form-container {
+  margin: 0px auto;
+  width: 290px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 225px rgba(255,255,255,.55);
+  overflow: hidden;
+}
+
+#box {
+  margin: 5px auto;
+  width: 290px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 225px rgba(255,255,255,.55);
+  overflow: hidden;
+  padding: 15px;
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#box-header {
+  margin-bottom: 10px;
+  color: rgb(41, 47, 51);
+  font-size: 12px;
+}
+#box-header h1{
+  color: rgb(102, 117, 127);
+  display: inline;
+  font-size: 20px;
+}
+
+
+#box #twitter-links:hover .twitter-links a{
+  color: rgb(41, 47, 51);
+}
+
+.twitter-links a{
+  color: rgb(153, 153, 153);
+}
+
+#follow-left{
+    width:58px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+#follow-left img{
+      border-radius: 5px;
+    }
+
+#follow-right{
+  display: inline-block;
+  vertical-align: top;
+  width: 198px;
+}
+
+#follow-right .fullname-follow a{
+  font-size: 13px;
+  color: black;
+}
+#follow-right .fullname-follow a:hover{
+  color: rgb(255, 146, 118)
+}
+
+.x {
+  float: right;
+}
+
+#form-container-header {
+  color: white;
+  height: 194px;
+  display: block;
+  font-weight: 200;
+  margin: 0px;
+  padding-top: 16px;
+  position: relative;
+  background-image: url("../images/profile_bg.jpg")
+}
+
+#form-container-header img {
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 3px solid white;
+}
+#header-profile {
+  margin-bottom: 22px;
+}
+#header-stats-bar {
+  background-color: white;
+  position: relative;
+  border: 1px solid rgb(225, 232, 237);
+}
+
+.stats {
+  background-color: rgb(255, 255, 255);
+
+  color: rgb(41, 47, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  height: 53px;
+  line-height: 16px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  overflow: hidden;
+  padding-bottom: 7px;
+  padding-right: 15px;
+}
+
+.stats li{
+  padding: 7px 0;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 53px;
+  margin: 0 15px;
+  overflow: hidden;
+  width: auto;
+}
+
+.stats li:hover{
+   cursor: pointer;
+}
+
+.stats li:hover h3{
+   color: rgb(255, 146, 118);
+}
+.stats li h2{
+  font-size: 20px;
+  color: rgb(255, 146, 118);
+  margin-top: 2px;
+}
+
+.stats li h3{
+  font-size: 10px;
+  color: rgb(153, 153, 153);
+}
+
+#new-tweet {
+  background-color: rgb(255,244,241)  
+}
+
+form {
+  text-align: left;
+  padding: 10px 12px;
+  background-color: rgb(255,244,241);
+}
+
+  form input[type="text"]{
+    border: 1px solid rgba(255, 146, 118, 0.25);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: rgb(41, 47, 51);
+    padding-left: 5px; 
+    font-size: 13px;
+    width: 266px;
+    height: 32px;
+    border-radius: 3px;  
+  }
+
+
+
+/******************** FORMS ********************/
+
+/******************** POSITIONING ********************/
+article{
+  width: 890px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#left{
+  float:left;
+}
+
+#right{
+  float:right;
+}
+/******************** POSITIONING ********************/

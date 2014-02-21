@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Twitter</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">  
+  <link rel="stylesheet" type="text/css" href="stylesheets/twitter.css">  
+</head>
+
+<body>
+<header>
+<div id="header-container">
+	<div id="navigator">
+	<ul>
+	<li>
+		<div class="menu-item">
+			<span class="menu-text">Home</span>
+		</div>
+	</li>
+	<li>	
+		<div class="menu-item">
+			<span class="menu-text">Connect</span>
+		</div>
+	</li>
+	<li>	
+		<div class="menu-item">
+			<span class="menu-text">Discover</span>
+		</div>
+	</li>
+	<li>	
+		<div class="menu-item">
+			<span class="menu-text">Me</span>
+		</div>
+	</li>
+	</ul>
+	</div>
+</div>
+</header>
+
+
+
+<article>
+	<div id="left">
+		<div id="form-container"> 
+			<div id="form-container-header">
+				<div id="header-profile">
+				<center><img src="images/user_pic.jpg">
+				<h1>Jorja</h1>
+				@jorjski
+				</center>
+				</div>
+				<div id="header-stats-bar">
+					<ul class="stats">
+					<li>
+						<h3>TWEETS</h3>
+						<h2>2,772</h2>
+					</li>
+					<li>
+						<h3>FOLLOWING</h3>
+						<h2>246</h2>
+					</li>
+					<li>
+						<h3>FOLLOWERS</h3>
+						<h2>335</h2>
+					</li>
+					</ul>
+				</div>
+			</div>
+				<form action="/tweets" method="post">
+					<input type="text" name="message" placeholder="Compose new Tweet..."><br>
+				</form>
+		</div>
+
+
+	<div id="box">
+	<div id="box-header"><h1>Who to follow</h1> &#183; <a href="">Refresh</a> &#183; <a href="">View all</a></div>
+	<div id="follow-left"><img src="images/user_pic.jpg"></div>
+	<div id="follow-right">
+		<span class='fullname-follow'><a href="/tweets/Jorja"><em>Jorja</em> </a></span>
+		<span class='username'>@jorjski</span>
+		<span class='x'>X</span>
+		<br> Followed by <a href="">Someone</a>
+		<br><button class="follow"><img src="images/follow.png"><span>Follow</span></button>
+	</div>
+	<br>
+	<div id="box-footer">
+	<a href="">Popular accounts</a> &#183; <a href="">Find friends</a></div>
+	</div>
+
+	<div id="box">
+	<div id="box-header"><h1>Trends</h1> &#183; <a href="">Change</a></div>
+		<ul>
+			<li><a href="">#cupcakes</a></li>
+			<li><a href="">#MakersAcademy</a></li>
+			<li><a href="">#beer</a></li>
+			<li><a href="">#needmoresleep</a></li>
+			<li><a href="">#nomorefrontend</a></li>
+			<li><a href="">Jorja is tired</a></li>
+			<li><a href="">Wants burger</a></li>
+	  	<li><a href="">Kim Kardashian</a></li>
+    </ul>
+	</div>
+
+		<div id="box"><div id="twitter-links">&#169; 2014 
+		<span class="twitter-links"><a href="">Twitter</a> <a href="">About</a> <a href="">Help</a> <a href="">Terms</a> <a href="">Privacy</a> <a href="">Cookies</a> <a href="">Ads info</a> <a href="">Brand</a> <a href="">Blog</a> <a href="">Status</a> <a href="">Apps</a> <a href="">Jobs</a> <a href="">Advertise</a> <a href="">Businesses</a> <a href="">Media</a> <a href="">Developers</a>
+		</span></div>
+	</div>
+</div>
+
+	<div id="right">
+		<div id="tweets-container">
+			<div id="tweets-container-header">
+				Tweets
+			</div>
+		<div id="tweets-container-content">
+			<div class="tweet">
+				<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+				<div class="tweet-middle">	
+					<span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a>
+					</span>
+					<span class='username'>@jorjski</a> &#183; 
+					</span>
+					<span class='timestamp'>0m</span>
+					<div class='message'>more tweet</div>
+					<div class="reply">
+						<div class="replyicon"></div>
+						<a href="">Reply</a></div>
+				</div>
+
+				<div class="tweet-right">
+					<div class="favorite"></div>
+					<div class="retweet"></div>
+				</div>
+			</div>
+
+
+			
+	</div>
+</div>
+</article>
+</body>
+</html>
