@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+@font-face{font-family:'rosettaicons';
+            src:url('../font/rosetta-icons-Regular.ttf') 
+            format('truetype');
+            font-style:normal;
+            font-weight:normal;}
+
+@font-face{font-family:'twittericons';
+          src:url('../font/twitter-icons.ttf') 
+          format('truetype');
+          font-style:normal;
+          font-weight:normal;}
+
 body {
   padding-top: 60px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -50,6 +62,14 @@ header {
   height: 38px;
 }
 
+#navigator {
+  float: left;
+}
+
+#right-navigator {
+  float: right;
+}
+
 #navigator ul{
   margin: 0;
   padding: 0;
@@ -61,12 +81,34 @@ header {
   font-size: 14px;
   color: rgb(102, 117, 127);
 }
+
 .menu-item {
-  
+  border: 0 solid white;
+  border-bottom-width: 4px;
+  display: inline-block;
+  height: 46px;
+  line-height: 13px;
+  padding-left: 4px;
+  padding-right: 14px;
+  transition-delay: 0s;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  width: auto;
 }
 
-.menu-text {
+.menu-item:hover{
+  border-bottom-color: rgb(255, 146, 118);
+  cursor: pointer;
+}
+
+.menu-item:hover .menu-text, .menu-item:hover .Icon{
   color: rgb(255, 146, 118);
+}
+
+
+.menu-text {
+  color: rgb(102, 117, 127);
   display: block;
   float: left;
   font-size: 13px;
@@ -76,9 +118,92 @@ header {
   margin-left: 3px;
   margin-top: 17px;
   text-align: left;
-  text-decoration: none;
-  text-shadow: none;
 }
+
+.Icon {
+  color: rgb(102, 117, 127);
+  display: block;
+  font-family: "rosettaicons";
+  font-size:21px;
+  float: left;
+  margin-left: 3px;
+  margin-top: 17px;
+  text-align: left;
+  display: inline-block;
+}
+
+.Icon--home:before{
+  content:"\f053";
+}
+
+.Icon--connect:before{
+  content:"\f050";
+}
+
+.Icon--discover:before{
+  content:"\f052"}
+
+.Icon--me:before{
+  content:"\f056"}
+
+#search input[type="text"]{
+  -webkit-box-shadow: none;
+-webkit-transition-delay: 0s;
+-webkit-transition-duration: 0.2s;
+-webkit-transition-property: all;
+-webkit-transition-timing-function: ease-in-out;
+background-color: rgba(0, 0, 0, 0);
+background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+border-bottom-color: rgb(255, 255, 255);
+border-bottom-left-radius: 21px;
+border-bottom-right-radius: 21px;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-left-color: rgb(255, 255, 255);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(255, 255, 255);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(255, 255, 255);
+border-top-left-radius: 21px;
+border-top-right-radius: 21px;
+border-top-style: none;
+border-top-width: 0px;
+box-shadow: none;
+color: rgb(255, 255, 255);
+display: block;
+font-family: 'Helvetica Neue', Arial, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+height: 21px;
+line-height: 12px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+opacity: 0.6000000238418579;
+outline-color: rgb(255, 255, 255);
+outline-style: none;
+outline-width: 0px;
+padding-bottom: 6px;
+padding-left: 12px;
+padding-right: 27px;
+padding-top: 5px;
+position: absolute;
+right: 0px;
+text-align: start;
+top: 0px;
+transition-delay: 0s;
+transition-duration: 0.2s;
+transition-property: all;
+transition-timing-function: ease-in-out;
+width: 182px;
+z-index: 2;
+}
+
 /******************** HEADER ********************/
 
 /******************** BUTTONS ********************/
@@ -349,6 +474,10 @@ button:hover {
 #header-profile {
   margin-bottom: 22px;
 }
+
+#header-profile h1{
+  font-weight: bold;
+}
 #header-stats-bar {
   background-color: white;
   position: relative;
@@ -401,17 +530,14 @@ button:hover {
   color: rgb(153, 153, 153);
 }
 
-#new-tweet {
-  background-color: rgb(255,244,241)  
-}
 
-form {
+#new-tweet {
   text-align: left;
   padding: 10px 12px;
   background-color: rgb(255,244,241);
 }
 
-  form input[type="text"]{
+#new-tweet input[type="text"]{
     border: 1px solid rgba(255, 146, 118, 0.25);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: rgb(41, 47, 51);
