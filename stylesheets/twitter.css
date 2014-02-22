@@ -84,22 +84,24 @@ header {
 
 .menu-item {
   border: 0 solid white;
-  border-bottom-width: 4px;
+  
   display: inline-block;
   height: 46px;
   line-height: 13px;
   padding-left: 4px;
   padding-right: 14px;
-  transition-delay: 0s;
-  transition-duration: 0.15s;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
   width: auto;
+  -o-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .menu-item:hover{
+  border-bottom-width: 4px;
   border-bottom-color: rgb(255, 146, 118);
   cursor: pointer;
+ 
 }
 
 .menu-item:hover .menu-text, .menu-item:hover .Icon{
@@ -118,6 +120,10 @@ header {
   margin-left: 3px;
   margin-top: 17px;
   text-align: left;
+   -o-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .Icon {
@@ -130,6 +136,10 @@ header {
   margin-top: 17px;
   text-align: left;
   display: inline-block;
+   -o-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .Icon--home:before{
@@ -146,62 +156,49 @@ header {
 .Icon--me:before{
   content:"\f056"}
 
-#search input[type="text"]{
-  -webkit-box-shadow: none;
--webkit-transition-delay: 0s;
--webkit-transition-duration: 0.2s;
--webkit-transition-property: all;
--webkit-transition-timing-function: ease-in-out;
-background-color: rgba(0, 0, 0, 0);
-background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
-border-bottom-color: rgb(255, 255, 255);
-border-bottom-left-radius: 21px;
-border-bottom-right-radius: 21px;
-border-bottom-style: none;
-border-bottom-width: 0px;
-border-left-color: rgb(255, 255, 255);
-border-left-style: none;
-border-left-width: 0px;
-border-right-color: rgb(255, 255, 255);
-border-right-style: none;
-border-right-width: 0px;
-border-top-color: rgb(255, 255, 255);
-border-top-left-radius: 21px;
-border-top-right-radius: 21px;
-border-top-style: none;
-border-top-width: 0px;
-box-shadow: none;
-color: rgb(255, 255, 255);
-display: block;
-font-family: 'Helvetica Neue', Arial, sans-serif;
-font-size: 12px;
-font-style: normal;
-font-variant: normal;
-font-weight: normal;
-height: 21px;
-line-height: 12px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
-opacity: 0.6000000238418579;
-outline-color: rgb(255, 255, 255);
-outline-style: none;
-outline-width: 0px;
-padding-bottom: 6px;
-padding-left: 12px;
-padding-right: 27px;
-padding-top: 5px;
-position: absolute;
-right: 0px;
-text-align: start;
-top: 0px;
-transition-delay: 0s;
-transition-duration: 0.2s;
-transition-property: all;
-transition-timing-function: ease-in-out;
-width: 182px;
-z-index: 2;
+
+.search { 
+  padding:7px 27px 6px 12px;
+  margin-top:7px; 
+}
+
+.dark input[type=text]{
+  border:1px solid white;
+  background-color:#a3acb2;
+  color:rgba(255,255,255, 0.6);
+  width: 221px;
+  height: 32px;
+  border-radius:21px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px; 
+  -moz-border-radius:20px; 
+  -webkit-border-radius:20px; 
+  -o-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+
+.dark input[type=text]:focus {
+    background-color: #65757e;
+}
+
+::-webkit-input-placeholder {
+   color:rgba(255,255,255, 0.6);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:rgba(255,255,255, 0.6); 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:rgba(255,255,255, 0.6);
+}
+
+:-ms-input-placeholder {  
+   color:rgba(255,255,255, 0.6);
 }
 
 /******************** HEADER ********************/
