@@ -125,22 +125,21 @@ header {
 }
 
 .Icon {
-  color: rgb(102, 117, 127);
-  display: block;
   font-family: "rosettaicons";
+}
+
+.menu-item .Icon{
+  color: rgb(102, 117, 127);
+  margin-top: 15px;
   font-size:21px;
   float: left;
   margin-left: 3px;
   text-align: left;
   display: inline-block;
-   -o-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-}
-
-.menu-item .Icon{
-    margin-top: 15px;
 }
 
 .Icon--home:before{
@@ -177,6 +176,7 @@ header {
 #twitter-bird{
   display: inline-block;
   position: fixed;
+  font-size: 24px;
   top: 10px;
   left: 50%;
 }
@@ -486,7 +486,7 @@ button:hover {
 
 /******************** tweetS ********************/
 
-/******************** FORMS ********************/
+/******************** SIDE ********************/
 #form-container {
   margin: 0px auto;
   width: 290px;
@@ -553,9 +553,14 @@ button:hover {
   color: rgb(255, 146, 118)
 }
 
-.x {
-  float: right;
+
+.Icon--close:before{
+  font-family: "twittericons";
+  content:"\f00d";
+  font-size: 12px;
+  margin-left: 100px;
 }
+
 
 #form-container-header {
   color: white;
