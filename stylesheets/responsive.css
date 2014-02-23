@@ -1,4 +1,4 @@
-@media (min-width : 768px) and (max-width : 1024px)   {
+@media (min-width : 721px) and (max-width : 1024px)   {
 	#search input[type=text]{
 		width: 150px;
 	}
@@ -23,7 +23,7 @@
 
 }
 
-@media (min-width : 320px) and (max-width : 480px) {
+@media (min-width : 461px) and (max-width : 720px) {
 	.menu-item {
 		padding: 0 2px;
 	}
@@ -70,24 +70,44 @@
   display: none;
 	}
 
+	.tweet-left {
+    width: 50px;
+  }
+
 	.tweet-middle {
-    width:80%;
+    width:73%;
     display: inline-block;
     vertical-align: top;
   }
 
   .tweet-right{
-    display: inline-block;
+    position: absolute;
+    margin-left: 2px;
   }
 
   .tweet{
-  padding: 5px
+  padding: 3px
 	}
 }
 
-@media (max-width : 320px) {
+@media (max-width : 460px) {
 	body {
 		padding-bottom: 60px;
+	}
+	
+	article{
+	  width: 95%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	#right{
+  width: 100%;
+  float: none;
+	}
+
+	#left{
+  display: none;
 	}
 
 	footer {
@@ -105,34 +125,38 @@
 	  overflow: hidden;
 	}
 
-header #navigator, header #right-navigator {
-	display: none;
-}
-footer ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+	header #navigator, header #right-navigator {
+		display: none;
+	}
+	footer ul{
+	  margin: 0;
+	  padding: 0;
+	  list-style-type: none;
+	}
 
-footer ul li{
-  display: inline;
-  font-size: 14px;
-  color: rgb(102, 117, 127);
-}
+	footer ul li{
+	  display: inline;
+	  font-size: 14px;
+	  color: rgb(102, 117, 127);
+	}
 
-footer .Icon--search:before{
-  content:"\f058";
-}
+	footer .Icon--search:before{
+	  content:"\f058";
+	}
 
-	.menu-item {
+	footer .menu-item {
 		padding: 0 5px;
 	}
 
-	#right-navigator button{
+	footer .menu-text {
+		display:none;
+	}
+
+	footer #right-navigator button{
 		margin-right: 5px;
 	}
 
-	#right-navigator span{
+	footer #right-navigator span{
   margin: 5px 7px;
 	}
 
