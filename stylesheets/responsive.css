@@ -70,9 +70,26 @@
   display: none;
 	}
 
+	.tweet-middle {
+    width:80%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .tweet-right{
+    display: inline-block;
+  }
+
+  .tweet{
+  padding: 5px
+	}
 }
 
 @media (max-width : 320px) {
+	body {
+		padding-bottom: 60px;
+	}
+
 	footer {
 	  position:fixed;
 	  margin:0px;
@@ -85,6 +102,7 @@
 	  background: white;
 	  background: -moz-linear-gradient(center top , #736F6E, #111111) repeat scroll 0 0 transparent;
 	  z-index: 1;
+	  overflow: hidden;
 	}
 
 header #navigator, header #right-navigator {
@@ -118,5 +136,26 @@ footer .Icon--search:before{
   margin: 5px 7px;
 	}
 
+	.tweet-left {
+    width: 50px;
+  }
 
+	.tweet-middle {
+    width:73%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .tweet-right{
+    position: absolute;
+    margin-left: 2px;
+  }
+
+  .tweet{
+  padding: 3px
 	}
+
+	.pusher{
+		height: 60px;
+	}
+}
