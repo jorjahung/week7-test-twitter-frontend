@@ -269,6 +269,7 @@ header {
 
 #right-navigator button{
   background-color: rgba(255, 146, 118, 0.8);
+  background-image: none;
   list-style-type: none;
   display: inline;
   float: right;
@@ -283,11 +284,11 @@ header {
   height: 32px;
   margin-right: 15px;
   margin-top: 2px;
-  opacity: 0.699999988079071;
   padding-left: 8px;
   padding-right: 7px;
   position: relative;
   text-align: center;
+  width: 40px;
 }
 
 #right-navigator button:hover{
@@ -306,44 +307,8 @@ header {
   line-height: 10px;
   vertical-align: middle;
   text-align: center;
-}.
+}
 /******************** HEADER ********************/
-
-/******************** BUTTONS ********************/
-button  {
-  background-color: rgb(245, 248, 250);
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 248, 250));
-  background-repeat: repeat-x;
-  border-radius: 4px;
-  border: 1px solid rgb(225, 232, 237);
-  border-bottom-style: solid;
-  box-shadow: none;
-  color: rgb(41, 47, 51);
-  cursor: pointer;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  height: 28px;
-  margin-right: 9px;
-  margin-top: 3px;
-  width: 88px;
-  padding: 5px 3px;
-}
-
-
-button img, button span{
-  vertical-align: middle;
-}
-
-button img{
-  margin: 0 4px;
-}
-
-button:hover {
-  background-color: rgb(225, 232, 237);
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(225, 232, 237));
-}
-/******************** BUTTONS ********************/
 
 
 /******************** TWEETS ********************/
@@ -679,6 +644,43 @@ button:hover {
 
 
 /******************** FORMS ********************/
+
+
+/******************** BUTTONS ********************/
+button  {
+  background-color: rgb(245, 248, 250);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 248, 250));
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  border: 1px solid rgb(225, 232, 237);
+  border-bottom-style: solid;
+  box-shadow: none;
+  color: rgb(41, 47, 51);
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 28px;
+  margin-right: 9px;
+  margin-top: 3px;
+  width: 88px;
+}
+
+
+button img, button span{
+  vertical-align: middle;
+}
+
+button img{
+  margin: 0 4px;
+}
+
+button:hover {
+  background-color: rgb(225, 232, 237);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(225, 232, 237));
+}
+
+/******************** BUTTONS ********************/
 
 /******************** POSITIONING ********************/
 article{
