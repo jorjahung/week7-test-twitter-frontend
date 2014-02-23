@@ -1,0 +1,122 @@
+@media (min-width : 768px) and (max-width : 1024px)   {
+	#search input[type=text]{
+		width: 150px;
+	}
+
+	article{
+	  width: 95%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.stats li h2{
+	  font-size:  15px;
+	}
+
+	.stats li h3{
+	  font-size: 8px;
+	}
+
+	#box-header h1{
+	  font-size: 16px;
+	}
+
+}
+
+@media (min-width : 320px) and (max-width : 480px) {
+	.menu-item {
+		padding: 0 2px;
+	}
+	.menu-text {
+		display:none;
+	}
+
+	#search input[type=text]{
+		width: 80px;
+	}
+
+	#right-navigator button{
+		margin-right: 3px;
+	}
+
+	#right-navigator span{
+  margin: 5px 3px;
+	}
+
+	article{
+	  width: 95%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.stats li h2{
+	  font-size:  15px;
+	}
+
+	.stats li h3{
+	  font-size: 8px;
+	}
+
+	#box-header h1{
+	  font-size: 16px;
+	}
+
+	#right{
+  width: 100%;
+  float: none;
+	}
+
+	#left{
+  display: none;
+	}
+
+}
+
+@media (max-width : 320px) {
+	footer {
+	  position:fixed;
+	  margin:0px;
+	  bottom:0px;
+	  left:0px;
+	  display: inline-block;
+	  width:100%;
+	  height:46px;
+	  border-top: 1px solid rgba(0, 0, 0, 0.3);
+	  background: white;
+	  background: -moz-linear-gradient(center top , #736F6E, #111111) repeat scroll 0 0 transparent;
+	  z-index: 1;
+	}
+
+header #navigator, header #right-navigator {
+	display: none;
+}
+footer ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li{
+  display: inline;
+  font-size: 14px;
+  color: rgb(102, 117, 127);
+}
+
+footer .Icon--search:before{
+  content:"\f058";
+}
+
+	.menu-item {
+		padding: 0 5px;
+	}
+
+	#right-navigator button{
+		margin-right: 5px;
+	}
+
+	#right-navigator span{
+  margin: 5px 7px;
+	}
+
+
+	}
