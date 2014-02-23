@@ -2,239 +2,270 @@
 <head>
 	<title>Twitter</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">  
-  <link rel="stylesheet" type="text/css" href="stylesheets/twitter.css">  
-   <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">  
+  <link rel="stylesheet" type="text/css" href="stylesheets/twitter.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">  
 </head>
 
 <body>
 <header>
-<div id="header-container">
-	<div id="navigator">
-	<ul>
-	<li>
-		<div class="menu-item">
-			<span class="Icon Icon--home"></span>
-			<span class="menu-text">Home</span>
+	<div id="header-container">
+		<div id="navigator">
+			<ul>
+			<li>
+				<div class="menu-item">
+					<span class="Icon Icon--home"></span>
+					<span class="menu-text">Home</span>
+				</div>
+			</li>
+			<li>	
+				<div class="menu-item not-important">
+					<span class="Icon Icon--connect"></span>
+					<span class="menu-text">Connect</span>
+				</div>
+			</li>
+			<li>	
+				<div class="menu-item not-important">
+					<span class="Icon Icon--discover"></span>
+					<span class="menu-text">Discover</span>
+				</div>
+			</li>
+			<li>	
+				<div class="menu-item">
+				<span class="Icon Icon--me"></span>
+					<span class="menu-text">Me</span>
+				</div>
+			</li>
+			</ul>
 		</div>
-	</li>
-	<li>	
-		<div class="menu-item not-important">
-			<span class="Icon Icon--connect"></span>
-			<span class="menu-text">Connect</span>
-		</div>
-	</li>
-	<li>	
-		<div class="menu-item not-important">
-			<span class="Icon Icon--discover"></span>
-			<span class="menu-text">Discover</span>
-		</div>
-	</li>
-	<li>	
-		<div class="menu-item">
-		<span class="Icon Icon--me"></span>
-			<span class="menu-text">Me</span>
-		</div>
-	</li>
-	</ul>
-	</div>
 
-	<div id="twitter-bird">
-		<span class="Icon Icon--bird">
-	</div>
+		<div id="twitter-bird">
+			<span class="Icon Icon--bird">
+		</div>
 
-	<div id="right-navigator">
-		<button><span class="Icon Icon--tweet"></span></button>
-		<span class="Icon Icon--cog"></span>
-		<span class="Icon Icon--dm"></span>
-		<div id="search">
-			<form class="roundedsearch">
-				<input type="text" placeholder="Search">
-				<span class="Icon Icon--search"></span>
-			</form>
+		<div id="right-navigator">
+			<button><span class="Icon Icon--tweet"></span></button>
+			<span class="Icon Icon--cog"></span>
+			<span class="Icon Icon--dm"></span>
+			<div id="search">
+				<form class="roundedsearch">
+					<input type="text" placeholder="Search">
+					<span class="Icon Icon--search"></span>
+				</form>
+			</div>
 		</div>
 	</div>
-</div>
 </header>
-
-
 
 <article>
 	<div id="left">
 		<div id="form-container"> 
 			<div id="form-container-header">
 				<div id="header-profile">
-				<center><img src="images/user_pic.jpg">
-				<h1>Jorja</h1>
-				@jorjski
-				</center>
+					<center><img src="images/user_pic.jpg">
+					<h1>Jorja</h1>
+					@jorjski
+					</center>
 				</div>
 				<div id="header-stats-bar">
 					<ul class="stats">
-					<li>
-						<h3>TWEETS</h3>
-						<h2>2,772</h2>
-					</li>
-					<li>
-						<h3>FOLLOWING</h3>
-						<h2>246</h2>
-					</li>
-					<li>
-						<h3>FOLLOWERS</h3>
-						<h2>335</h2>
-					</li>
+						<li>
+							<h3>TWEETS</h3>
+							<h2>2,772</h2>
+						</li>
+						<li>
+							<h3>FOLLOWING</h3>
+							<h2>246</h2>
+						</li>
+						<li>
+							<h3>FOLLOWERS</h3>
+							<h2>335</h2>
+						</li>
 					</ul>
 				</div>
 			</div>
-	
-				<form id="new-tweet" action="/tweets" method="post">
-					<input type="text" placeholder="Compose new Tweet...">
-				</form>
-
-		
+			<form id="new-tweet" action="/tweets" method="post">
+				<textarea placeholder="Compose new tweet..."></textarea> 
+			</form>
 		</div>
 
+		<div id="box">
+			<div id="box-header">
+				<h1>Who to follow</h1> &#183; <a href="">Refresh</a> &#183; <a href="">View all</a>
+			</div>
 
-	<div id="box">
-	<div id="box-header"><h1>Who to follow</h1> &#183; <a href="">Refresh</a> &#183; <a href="">View all</a></div>
-	<div id="follow-left"><img src="images/user_pic.jpg"></div>
-	<div id="follow-right">
-		<span class='fullname-follow'><a href="/tweets/Jorja"><em>Jorja</em> </a></span>
-		<span class='username'>@jorjski</span>
-		<span class='Icon Icon--close'></span>
-		<br> Followed by <a href="">Someone</a>
-		<br><button class="follow"><img src="images/follow.png"><span>Follow</span></button>
-	</div>
-	<br>
-	<div id="box-footer">
-	<a href="">Popular accounts</a> &#183; <a href="">Find friends</a></div>
-	</div>
+			<div id="follow-left">
+				<img src="images/user_pic.jpg">
+			</div>
 
-	<div id="box">
-	<div id="box-header"><h1>Trends</h1> &#183; <a href="">Change</a></div>
-		<ul>
-			<li><a href="">#cupcakes</a></li>
-			<li><a href="">#MakersAcademy</a></li>
-			<li><a href="">#beer</a></li>
-			<li><a href="">#needmoresleep</a></li>
-			<li><a href="">#nomorefrontend</a></li>
-			<li><a href="">Jorja is tired</a></li>
-			<li><a href="">Wants burger</a></li>
-	  	<li><a href="">Kim Kardashian</a></li>
-    </ul>
-	</div>
+			<div id="follow-right">
+				<span class='fullname-follow'><a href="/tweets/Jorja"><em>Jorja</em> </a></span>
+				<span class='username'>@jorjski</span>
+				<span class='Icon Icon--close'></span>
+				<br> Followed by <a href="">Someone</a>
+				<br><button class="follow"><img src="images/follow.png"><span>Follow</span></button>
+			</div><br>
+		
+			<div id="box-footer">
+				<a href="">Popular accounts</a> &#183; <a href="">Find friends</a>
+			</div>
+		</div>
 
-		<div id="box"><div id="twitter-links">&#169; 2014 
-		<span class="twitter-links"><a href="">Twitter</a> <a href="">About</a> <a href="">Help</a> <a href="">Terms</a> <a href="">Privacy</a> <a href="">Cookies</a> <a href="">Ads info</a> <a href="">Brand</a> <a href="">Blog</a> <a href="">Status</a> <a href="">Apps</a> <a href="">Jobs</a> <a href="">Advertise</a> <a href="">Businesses</a> <a href="">Media</a> <a href="">Developers</a>
-		</span></div>
+		<div id="box">
+			<div id="box-header">
+				<h1>Trends</h1> &#183; <a href="">Change</a>
+			</div>
+			<ul>
+				<li><a href="">#cupcakes</a></li>
+				<li><a href="">#MakersAcademy</a></li>
+				<li><a href="">#beer</a></li>
+				<li><a href="">#needmoresleep</a></li>
+				<li><a href="">#nomorefrontend</a></li>
+				<li><a href="">Jorja is tired</a></li>
+				<li><a href="">Wants burger</a></li>
+		  	<li><a href="">Kim Kardashian</a></li>
+	    </ul>
+		</div>
+
+		<div id="box">
+			<div id="twitter-links">&#169; 2014 
+				<span class="twitter-links"><a href="">Twitter</a> <a href="">About</a> <a href="">Help</a> <a href="">Terms</a> <a href="">Privacy</a> <a href="">Cookies</a> <a href="">Ads info</a> <a href="">Brand</a> <a href="">Blog</a> <a href="">Status</a> <a href="">Apps</a> <a href="">Jobs</a> <a href="">Advertise</a> <a href="">Businesses</a> <a href="">Media</a> <a href="">Developers</a>
+				</span>
+			</div>
+		</div>
 	</div>
-</div>
 
 	<div id="right">
 		<div id="tweets-container">
-			<div id="tweets-container-header">
-				Tweets
-			</div>
-		<div id="tweets-container-content">
-			<div class="tweet">
-				<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
-				<div class="tweet-middle">	
-					<span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a>
-					</span>
-					<span class='username'>@jorjski</a> &#183; 
-					</span>
-					<span class='timestamp'>1m</span>
-					<div class='message'>"Better to do something imperfectly than to do nothing flawlessly." - Dr. Robert Schuller</div>
-					<div class="reply">
-						<div class="replyicon"></div>
-						<a href="">Reply</a></div>
-				</div>
+			<div id="tweets-container-header">Tweets</div>
+			<div id="tweets-container-content">
+				<div id="postwrapper">
+					<div class="tweet">
+						<div class="tweet-left">
+							<span class='userpic'><img src="images/user_pic.jpg"></span>
+						</div>
+						<div class="tweet-middle">	
+							<span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a>
+							</span>
+							<span class='username'>@jorjski</a> &#183; 
+							</span>
+							<span class='timestamp'>1m</span>
+							<div class='message'>"Better to do something imperfectly than to do nothing flawlessly." - Dr. Robert Schuller</div>
+							<div class="reply">
+								<div class="replyicon"></div>
+								<a href="">Reply</a></div>
+						</div>
+						<div class="tweet-right">
+							<div class="favorite"></div>
+							<div class="retweet"></div>
+						</div>
+					</div>
 
-				<div class="tweet-right">
-					<div class="favorite"></div>
-					<div class="retweet"></div>
+				<!-- *****DUMMY TWEETS START HERE***** -->
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>7m</span><div class='message'>"If you plan on being anything less than you are capable of being, you will probably be unhappy all the days of your life." - Abraham Maslow</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>8m</span><div class='message'>Ate a tuna sandwich</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>15m</span><div class='message'>"The dictionary is the only place where success comes before work." - Mark Twain</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>16m</span><div class='message'>Watch Lord of the Rings</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>25m</span><div class='message'>"It is the trouble that never comes that causes the loss of sleep." - Charles Austin Bates</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>30m</span><div class='message'>"Every morning we are born again. What we do today is what matters most." - Buddha</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>31m</span><div class='message'>I like big butts and I cannot lie</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+
+					<div class="tweet">
+						<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
+						<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>1h</span><div class='message'>"Live out of your imagination, not your history." - Stephen Covey</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
+						<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
+					</div>
+				<!-- *****DUMMY TWEETS END HERE***** -->
+					
 				</div>
+				<div id="ajaxloader" ><center><img src="images/ajax-loader.gif" /></center></div>
 			</div>
+		</div>
 	</div>
-
-	<!-- *****DUMMY TWEETS START HERE***** -->
-	<div class="tweet">
-	<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
-	<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>7m</span><div class='message'>"If you plan on being anything less than you are capable of being, you will probably be unhappy all the days of your life." - Abraham Maslow</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
-	<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
-</div>
-
-<div class="tweet">
-	<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
-	<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>15m</span><div class='message'>"The dictionary is the only place where success comes before work." - Mark Twain</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
-	<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
-</div>
-
-<div class="tweet">
-	<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
-	<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>25m</span><div class='message'>"It is the trouble that never comes that causes the loss of sleep." - Charles Austin Bates</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
-	<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
-</div>
-
-<div class="tweet">
-	<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
-	<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>30m</span><div class='message'>"Every morning we are born again. What we do today is what matters most." - Buddha</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
-	<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
-</div>
-
-<div class="tweet">
-	<div class="tweet-left"><span class='userpic'><img src="images/user_pic.jpg"></span></div>
-	<div class="tweet-middle"><span class='fullname'><a href="/tweets/Jorja"><em>Jorja</em> </a></span><span class='username'>@jorjski</a> &#183; </span><span class='timestamp'>1h</span><div class='message'>"Live out of your imagination, not your history." - Stephen Covey</div><div class="reply"><div class="replyicon"></div><a href="">Reply</a></div></div>
-	<div class="tweet-right"><div class="favorite"></div><div class="retweet"></div></div>
-</div>
-<!-- *****DUMMY TWEETS END HERE***** -->
-
-</div>
 </article>
 
 <div class="pusher"></div>
 
 <footer>
-<div id="header-container">
-	<div id="navigator">
-	<ul>
-	<li>
-		<div class="menu-item">
-			<span class="Icon Icon--home"></span>
-			<span class="menu-text">Home</span>
+	<div id="header-container">
+		<div id="navigator">
+		<ul>
+		<li>
+			<div class="menu-item">
+				<span class="Icon Icon--home"></span>
+				<span class="menu-text">Home</span>
+			</div>
+		</li>
+		<li>	
+			<div class="menu-item not-important">
+				<span class="Icon Icon--connect"></span>
+				<span class="menu-text">Connect</span>
+			</div>
+		</li>
+		<li>	
+			<div class="menu-item not-important">
+				<span class="Icon Icon--discover"></span>
+				<span class="menu-text">Discover</span>
+			</div>
+		</li>
+		<li>	
+			<div class="menu-item">
+			<span class="Icon Icon--me"></span>
+				<span class="menu-text">Me</span>
+			</div>
+		</li>
+		</ul>
 		</div>
-	</li>
-	<li>	
-		<div class="menu-item not-important">
-			<span class="Icon Icon--connect"></span>
-			<span class="menu-text">Connect</span>
-		</div>
-	</li>
-	<li>	
-		<div class="menu-item not-important">
-			<span class="Icon Icon--discover"></span>
-			<span class="menu-text">Discover</span>
-		</div>
-	</li>
-	<li>	
-		<div class="menu-item">
-		<span class="Icon Icon--me"></span>
-			<span class="menu-text">Me</span>
-		</div>
-	</li>
-	</ul>
-	</div>
 
-	<div id="twitter-bird">
-		<span class="Icon Icon--bird">
-	</div>
+		<div id="twitter-bird">
+			<span class="Icon Icon--bird">
+		</div>
 
-	<div id="right-navigator">
-		<button><span class="Icon Icon--tweet"></span></button>
-		<span class="Icon Icon--cog"></span>
-		<span class="Icon Icon--dm"></span>
-		<span class="Icon Icon--search"></span>
+		<div id="right-navigator">
+			<button><span class="Icon Icon--tweet"></span></button>
+			<span class="Icon Icon--cog"></span>
+			<span class="Icon Icon--dm"></span>
+			<span class="Icon Icon--search"></span>
+		</div>
 	</div>
-</div>
 </footer>
+
+<script src='http://code.jquery.com/jquery-2.1.0.js'></script>
+<script src='javascript/infinite-scrolling.js'></script>
+
+
 </body>
 </html>
