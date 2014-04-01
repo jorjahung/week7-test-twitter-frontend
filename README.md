@@ -7,11 +7,11 @@ Deployed to Heroku: http://fauxtwitter.herokuapp.com
 
 
 ####Main difference is in the responsiveness
-Real Twitter:
+Real Twitter by Twitter:
 
 ![alt text](https://raw.githubusercontent.com/jorjahung/week7-test-twitter-frontend/master/realtwitter.png "Not really responsive")
 
-Fake Twitter:
+Fake Twitter by me:
 
 ![alt text](https://raw.githubusercontent.com/jorjahung/week7-test-twitter-frontend/master/fauxtwitter-mobile.png "Responsive!")
 
